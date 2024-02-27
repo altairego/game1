@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Game1</title>
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/game1.css">
+    </head>
+    <body>
+        <div id="jeu" class="game">
+            <div id="titre">Game1</div>
+            <div id="contenu" class="cards">
+                <div id="menu" class="init card">
+                    <div>
+                        <legend>Nombre de joueurs</legend>
+                        <button id="nbpbtn2" event="nbplayerbtn" class="nbplayer checkbtn checked">2</button>
+                        <button id="nbpbtn3" event="nbplayerbtn" class="nbplayer checkbtn">3</button>
+                    </div>
+                    <button id="gobtn">Jouer</button>
+                </div>
+
+                <div id="piste" class="card">
+                    <div id="invite"><div id="invitanim"></div></div>
+                    <canvas id="barres"></canvas>
+                    <table class="plateau"></table>
+                    <div id="scores"></div>
+                    <button id="restartbtn" event="gomenu">Menu</button>
+                </div>
+                
+                <div id="score" class="card"><button id="scoremnubtn" event="gomenu">Menu</button></div>
+            </div>
+            <div id="message">On joue?</div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/__objects.js"></script>
+        <script src="js/engine.js"></script>
+        <script src="js/game1.js"></script>
+	</body>
+</html>
